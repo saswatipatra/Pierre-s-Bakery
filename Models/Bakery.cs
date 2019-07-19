@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 namespace PierreBakery.Models
 {
   class Bread
@@ -11,18 +12,15 @@ namespace PierreBakery.Models
       _breadName = breadName;
       _breadPrice = breadPrice;
     }
-    public static void Bill(int bread, int pastry)
+    public string GetBreadName()
+    {
+      return _breadName;
+    }
+    public static int BreadBill(int breadNum)
     {
       int bill=0;
-      if (bread!=0)
-      {
-        bill= bill + (bread*5);
-      }
-      if (pastry!=0)
-      {
-        bill= bill + (pastry*2);
-      }
-      Console.WriteLine("your total bill is: "+ bill);
+      bill= bill + (breadNum*5);
+      return bill;
     }
   }
   class Pastry
@@ -35,18 +33,15 @@ namespace PierreBakery.Models
       _pastryName = pastryName;
       _pastryPrice = pastryPrice;
     }
-    public static void Bill(int bread, int pastry)
+    public string GetPastryName()
     {
-      int bill=0;
-      if (bread!=0)
-      {
-        bill= bill + (bread*5);
-      }
-      if (pastry!=0)
-      {
-        bill= bill + (pastry*2);
-      }
-      Console.WriteLine("your total bill is: "+ bill);
+      return _pastryName;
+    }
+    public static int PastryBill(int pastry)
+    {
+      int pastryBill=0;
+      pastryBill= pastryBill + (pastry*2);
+      return pastryBill;
     }
   }
 }
