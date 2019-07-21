@@ -15,9 +15,9 @@ On this web site, a user may enter the different type of bread/pastry they would
 | **how many pastry would you like to buy** |3  | bill: 5$|
 
 ## Setup/Installation Requirements
-*_Clone this repository:https://github.com/saswatipatra/Pierre-s-Bakery*
+*_Clone this repository:https://github.com/saswatipatra/Pierre-s-Bakery_*
 *_Build distribution files: dotnet build_*
-*_Start the file: dotnet run*
+*_Start the file: dotnet run_*
 
 
 ## Known Bugs
